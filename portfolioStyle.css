@@ -2,8 +2,8 @@
 body{
     text-align: center;
     background-color:black;
-    color:white
-    
+    color:white;
+    font-family: "BlockFont", serif;
   }
 
   .wrap{
@@ -17,10 +17,12 @@ body{
   }
 
   h1{
+    font-family: "HeaderFont", serif;
     font-size: 2.2em;
   }
 
   h2{
+    font-family: "HeaderFont", serif;
     font-size: 1.7em;
   }
 
@@ -38,11 +40,21 @@ body{
   a{
       color:rgb(0, 76, 255)
   }
-      
+  
+  @font-face {
+    font-family: 'BlockFont';
+    src: url('WebPlus_IBM_VGA_8x16.woff');
+  }
+
+  @font-face {
+    font-family: 'HeaderFont';
+    src: url('Web437_EpsonMGA.woff');
+  }
+
   @keyframes rainbow{
           0%{
-            border-color: hsl(0,100%,50%);
-              color: hsl(0,100%,50%);
+            border-color:hsl(359, 100%, 62%);
+            color: hsl(359, 100%, 62%);
           }
           
           25%{
@@ -55,12 +67,12 @@ body{
             color: hsl(180,100%,50%)
             }
           75%{
-            border-color:hsl(270,100%,50%);
-            color: hsl(270,100%,50%)
+            border-color:hsl(270, 100%, 63%);
+            color: hsl(270, 100%, 63%);
           }
             
           100%{
-            border-color:hsl(359,100%,50%);
-            color: hsl(359,100%,50%);
+            border-color:hsl(359, 100%, 62%);
+            color: hsl(359, 100%, 62%);
           }
   }
